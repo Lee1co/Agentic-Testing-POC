@@ -1,0 +1,13 @@
+# Dependencies and secrets
+node_modules/
+.env
+
+# Agent / Playwright runtime noise (testing-agent)
+.agent-workspace/
+test-results/
+playwright-report/
+reports/artifacts/
+*.log
+
+# Monorepo migration scratch (delete after feat branch is recreated)
+.monorepo-migrate/
