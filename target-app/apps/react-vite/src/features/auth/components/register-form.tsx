@@ -1,4 +1,4 @@
-import * as React from 'react';
+﻿import * as React from 'react';
 import { Link, useSearchParams } from 'react-router';
 
 import { Button } from '@/components/ui/button';
@@ -98,7 +98,7 @@ export const RegisterForm = ({
                 type="submit"
                 className="w-full"
               >
-                Register
+                Create account
               </Button>
             </div>
           </>
