@@ -1,0 +1,81 @@
+{
+  "appId": "bulletproof-react",
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "appId": "bulletproof-react",
+      "title": "Only team administrators may start new discussions",
+      "type": "permission",
+      "description": "Discussions are the team's official communication channel. To keep it curated, only the team administrator (the person who created the team) may create new discussions. Regular team members, who join an existing team, may read discussions but must not be able to create them.",
+      "roles": ["ADMIN (team creator)", "USER (member who joined an existing team)"],
+      "businessRules": [
+        "BR-1: A person who registers by creating a new team becomes that team's ADMIN.",
+        "BR-2: A person who registers by joining an existing team becomes a regular USER of that team.",
+        "BR-3: Only ADMIN users may create discussions. The create action must not be offered to USER members."
+      ],
+      "workflow": [
+        "A team administrator registers and creates a team.",
+        "A second person registers and chooses to join the administrator's existing team.",
+        "The team member opens the Discussions area of the application."
+      ],
+      "acceptanceCriteria": [
+        {
+          "id": "AC-1",
+          "given": "a person registered by joining an existing team (a regular USER member)",
+          "when": "they open the Discussions page",
+          "then": "the Discussions page is shown but no 'Create Discussion' action is available to them"
+        },
+        {
+          "id": "AC-2",
+          "given": "the person who created the team (the team ADMIN)",
+          "when": "they open the Discussions page",
+          "then": "a 'Create Discussion' action is available to them"
+        }
+      ],
+      "expectedOutcomes": [
+        "Members can view the Discussions page.",
+        "The create-discussion capability is reserved for administrators."
+      ],
+      "priority": "high",
+      "tags": ["permissions", "roles", "discussions", "admin", "team", "create"],
+      "source": {
+        "document": "Team Collaboration - Business Requirements Specification",
+        "section": "4.2 Discussion governance",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "REQ-002",
+      "appId": "bulletproof-react",
+      "title": "The team user directory is restricted to administrators",
+      "type": "permission",
+      "description": "The list of users (names, emails, roles) is personal data. Only administrators may view the user directory; regular members must receive an explicit access-denied message instead of the list.",
+      "roles": ["ADMIN (team creator)", "USER (member who joined an existing team)"],
+      "businessRules": [
+        "BR-4: Only ADMIN users may view the Users directory.",
+        "BR-5: A USER member who opens the Users area sees a message explaining that only an admin can view it, and no user data."
+      ],
+      "workflow": [
+        "A team administrator registers and creates a team.",
+        "A second person registers and joins the administrator's team.",
+        "The team member navigates to the Users area."
+      ],
+      "acceptanceCriteria": [
+        {
+          "id": "AC-1",
+          "given": "a regular USER member of a team",
+          "when": "they open the Users page",
+          "then": "they see the message 'Only admin can view this.' and no table of users is displayed"
+        }
+      ],
+      "expectedOutcomes": ["No user data is exposed to non-administrators."],
+      "priority": "high",
+      "tags": ["permissions", "roles", "users", "admin", "privacy"],
+      "source": {
+        "document": "Team Collaboration - Business Requirements Specification",
+        "section": "4.3 User directory privacy",
+        "version": "1.0"
+      }
+    }
+  ]
+}

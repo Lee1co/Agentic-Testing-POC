@@ -1,0 +1,225 @@
+{
+  "appId": "bulletproof-react",
+  "name": "Bulletproof React (react-vite app)",
+  "targetUrl": "http://localhost:3000",
+  "firstSeenAt": "2026-11-12T14:08:44.287Z",
+  "lastExploredAt": "2026-11-12T14:51:06.389Z",
+  "objectives": [
+    "Register a new user who creates a new team and verify they land on the dashboard showing a welcome message",
+    "Validate REQ-001: Only team administrators may start new discussions"
+  ],
+  "pages": [
+    {
+      "path": "/",
+      "url": "http://localhost:3000/",
+      "title": "Bulletproof React",
+      "testIds": [],
+      "observedAt": "2026-11-12T14:51:06.387Z"
+    },
+    {
+      "path": "/auth/login",
+      "url": "http://localhost:3000/auth/login?redirectTo=%2Fapp",
+      "title": "Log in to your account | Bulletproof React",
+      "testIds": [],
+      "observedAt": "2026-11-12T14:51:06.387Z"
+    },
+    {
+      "path": "/register",
+      "url": "http://localhost:3000/register",
+      "title": "Bulletproof React",
+      "testIds": [],
+      "observedAt": "2026-11-12T14:20:31.143Z"
+    },
+    {
+      "path": "/auth/register",
+      "url": "http://localhost:3000/auth/register?redirectTo=%2Fapp",
+      "title": "Register your account | Bulletproof React",
+      "testIds": [],
+      "observedAt": "2026-11-12T14:51:06.387Z"
+    },
+    {
+      "path": "/app",
+      "url": "http://localhost:3000/app",
+      "title": "Dashboard | Bulletproof React",
+      "testIds": [],
+      "observedAt": "2026-11-12T14:51:06.387Z"
+    },
+    {
+      "path": "/app/discussions",
+      "url": "http://localhost:3000/app/discussions",
+      "title": "Discussions | Bulletproof React",
+      "testIds": [],
+      "observedAt": "2026-11-12T14:51:06.387Z"
+    }
+  ],
+  "verifiedLocators": [
+    {
+      "locator": "getByRole('heading', { name: 'Register your account' })",
+      "testIds": [
+        "register-new-who-creates-new-team-they-land"
+      ],
+      "lastVerifiedAt": "2026-11-12T14:15:04.149Z"
+    },
+    {
+      "locator": "getByLabel('First Name')",
+      "testIds": [
+        "register-new-who-creates-new-team-they-land",
+        "req-001-only-team-administrators-may-start-new-mwdnvqqx"
+      ],
+      "lastVerifiedAt": "2026-11-12T14:53:18.801Z"
+    },
+    {
+      "locator": "getByLabel('Last Name')",
+      "testIds": [
+        "register-new-who-creates-new-team-they-land",
+        "req-001-only-team-administrators-may-start-new-mwdnvqqx"
+      ],
+      "lastVerifiedAt": "2026-11-12T14:53:18.801Z"
+    },
+    {
+      "locator": "getByLabel('Email Address')",
+      "testIds": [
+        "register-new-who-creates-new-team-they-land",
+        "req-001-only-team-administrators-may-start-new-mwdnvqqx"
+      ],
+      "lastVerifiedAt": "2026-11-12T14:53:18.801Z"
+    },
+    {
+      "locator": "getByLabel('Password')",
+      "testIds": [
+        "register-new-who-creates-new-team-they-land",
+        "req-001-only-team-administrators-may-start-new-mwdnvqqx"
+      ],
+      "lastVerifiedAt": "2026-11-12T14:53:18.801Z"
+    },
+    {
+      "locator": "getByLabel('Team Name')",
+      "testIds": [
+        "register-new-who-creates-new-team-they-land",
+        "req-001-only-team-administrators-may-start-new-mwdnvqqx"
+      ],
+      "lastVerifiedAt": "2026-11-12T14:53:18.801Z"
+    },
+    {
+      "locator": "getByRole('button', { name: 'Register' })",
+      "testIds": [
+        "register-new-who-creates-new-team-they-land"
+      ],
+      "lastVerifiedAt": "2026-11-12T14:10:15.637Z"
+    },
+    {
+      "locator": "getByRole('heading', { name: 'Dashboard' })",
+      "testIds": [
+        "register-new-who-creates-new-team-they-land"
+      ],
+      "lastVerifiedAt": "2026-11-12T14:15:04.149Z"
+    },
+    {
+      "locator": "getByRole('heading', { name: `Welcome ${firstName} ${lastName}` })",
+      "testIds": [
+        "register-new-who-creates-new-team-they-land"
+      ],
+      "lastVerifiedAt": "2026-11-12T14:15:04.149Z"
+    },
+    {
+      "locator": "getByRole('heading', { name: /Your role is : ADMIN/ })",
+      "testIds": [
+        "register-new-who-creates-new-team-they-land",
+        "req-001-only-team-administrators-may-start-new-mwdnvqqx"
+      ],
+      "lastVerifiedAt": "2026-11-12T14:53:18.801Z"
+    },
+    {
+      "locator": "getByRole('button', { name: 'Create account' })",
+      "testIds": [
+        "register-new-who-creates-new-team-they-land",
+        "req-001-only-team-administrators-may-start-new-mwdnvqqx"
+      ],
+      "lastVerifiedAt": "2026-11-12T14:53:18.801Z"
+    },
+    {
+      "locator": "getByRole('button', { name: 'Open user menu' })",
+      "testIds": [
+        "req-001-only-team-administrators-may-start-new-mwdnvqqx"
+      ],
+      "lastVerifiedAt": "2026-11-12T14:53:18.801Z"
+    },
+    {
+      "locator": "getByRole('menuitem', { name: 'Sign Out' })",
+      "testIds": [
+        "req-001-only-team-administrators-may-start-new-mwdnvqqx"
+      ],
+      "lastVerifiedAt": "2026-11-12T14:53:18.801Z"
+    },
+    {
+      "locator": "getByRole('heading', { name: 'Log in to your account' })",
+      "testIds": [
+        "req-001-only-team-administrators-may-start-new-mwdnvqqx"
+      ],
+      "lastVerifiedAt": "2026-11-12T14:53:18.801Z"
+    },
+    {
+      "locator": "getByRole('link', { name: 'Register' })",
+      "testIds": [
+        "req-001-only-team-administrators-may-start-new-mwdnvqqx"
+      ],
+      "lastVerifiedAt": "2026-11-12T14:53:18.801Z"
+    },
+    {
+      "locator": "getByRole('switch')",
+      "testIds": [
+        "req-001-only-team-administrators-may-start-new-mwdnvqqx"
+      ],
+      "lastVerifiedAt": "2026-11-12T14:53:18.801Z"
+    },
+    {
+      "locator": "getByRole('combobox', { name: 'Team' })",
+      "testIds": [
+        "req-001-only-team-administrators-may-start-new-mwdnvqqx"
+      ],
+      "lastVerifiedAt": "2026-11-12T14:53:18.801Z"
+    },
+    {
+      "locator": "getByRole('heading', { name: /Your role is : USER/ })",
+      "testIds": [
+        "req-001-only-team-administrators-may-start-new-mwdnvqqx"
+      ],
+      "lastVerifiedAt": "2026-11-12T14:53:18.801Z"
+    },
+    {
+      "locator": "getByRole('link', { name: 'Discussions' })",
+      "testIds": [
+        "req-001-only-team-administrators-may-start-new-mwdnvqqx"
+      ],
+      "lastVerifiedAt": "2026-11-12T14:53:18.801Z"
+    },
+    {
+      "locator": "getByRole('heading', { name: 'Discussions', level: 1 })",
+      "testIds": [
+        "req-001-only-team-administrators-may-start-new-mwdnvqqx"
+      ],
+      "lastVerifiedAt": "2026-11-12T14:53:18.801Z"
+    },
+    {
+      "locator": "getByRole('button', { name: 'Create Discussion' })",
+      "testIds": [
+        "req-001-only-team-administrators-may-start-new-mwdnvqqx"
+      ],
+      "lastVerifiedAt": "2026-11-12T14:53:18.801Z"
+    },
+    {
+      "locator": "getByRole('button', { name: 'Log in' })",
+      "testIds": [
+        "req-001-only-team-administrators-may-start-new-mwdnvqqx"
+      ],
+      "lastVerifiedAt": "2026-11-12T14:53:18.801Z"
+    },
+    {
+      "locator": "getByRole('link', { name: 'Users' })",
+      "testIds": [
+        "req-001-only-team-administrators-may-start-new-mwdnvqqx"
+      ],
+      "lastVerifiedAt": "2026-11-12T14:53:18.801Z"
+    }
+  ]
+}

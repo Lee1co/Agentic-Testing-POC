@@ -1,0 +1,22 @@
+[
+  {
+    "id": "register-new-who-creates-new-team-they-land-heal-1794492863980-1",
+    "testId": "register-new-who-creates-new-team-they-land",
+    "at": "2026-11-12T14:14:23.980Z",
+    "attempt": 1,
+    "preClassification": "possible-ui-change",
+    "agentClassification": "locator-change",
+    "diagnosis": "Registration still works; the primary submit control’s accessible name changed from \"Register\" to \"Create account\", so getByRole('button', { name: 'Register' }) never matched and the click timed out.",
+    "outcome": "repaired",
+    "details": "candidate passed in 10379ms",
+    "candidateFile": "_candidates\\bulletproof-react.register-new-who-creates-new-team-they-land.heal-v2-a1.spec.ts",
+    "fromVersion": 1,
+    "toVersion": 2,
+    "agent": {
+      "provider": "cursor",
+      "model": "composer-2.5",
+      "sessionId": "agent-8e78c0d7-ae09-492b-a864-6d4b4b715f2e",
+      "runId": "run-80b4c969-9c2c-4ba7-8259-f8bd2de2462d"
+    }
+  }
+]

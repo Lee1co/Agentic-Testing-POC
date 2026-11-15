@@ -1,0 +1,64 @@
+{
+  "command": "generate",
+  "startedAt": "2026-11-12T14:06:46.649Z",
+  "finishedAt": "2026-11-12T14:08:56.413Z",
+  "appId": "bulletproof-react",
+  "appName": "Bulletproof React (react-vite app)",
+  "targetUrl": "http://localhost:3000",
+  "objective": "Register a new user who creates a new team and verify they land on the dashboard showing a welcome message",
+  "mode": "generate",
+  "status": "passed",
+  "durationMs": {
+    "total": 129764,
+    "testExecution": 10245,
+    "agent": 117620
+  },
+  "testId": "register-new-who-creates-new-team-they-land",
+  "testFile": "bulletproof-react/register-new-who-creates-new-team-they-land.spec.ts",
+  "testVersion": 1,
+  "reusedExistingTest": false,
+  "aiInvocations": 1,
+  "agentInvocations": [
+    {
+      "kind": "generate-test",
+      "status": "succeeded",
+      "provider": "cursor",
+      "model": "composer-2.5",
+      "durationMs": 117620,
+      "sessionId": "agent-8e78c0d7-ae09-492b-a864-6d4b4b715f2e",
+      "runId": "run-7d6bdcf8-19fc-4d46-93ab-99df62062d64",
+      "resumedSession": false,
+      "toolCalls": {
+        "explore_page": 12,
+        "run_candidate_test": 1,
+        "submit_test": 1
+      },
+      "usage": {
+        "inputTokens": 119785,
+        "outputTokens": 3056,
+        "cacheReadTokens": 91200,
+        "cacheWriteTokens": 0,
+        "totalTokens": 122841
+      },
+      "costUnavailableReason": "getUsage() unavailable (feature_unavailable)"
+    }
+  ],
+  "tokenUsage": {
+    "inputTokens": 119785,
+    "outputTokens": 3056,
+    "cacheReadTokens": 91200,
+    "cacheWriteTokens": 0,
+    "totalTokens": 122841,
+    "reasoningTokens": 0
+  },
+  "costNote": "not reported (getUsage() unavailable (feature_unavailable)); no estimate is made",
+  "healing": {
+    "attempted": false
+  },
+  "failures": [],
+  "screenshots": [],
+  "notes": [
+    "Related business requirements injected for awareness: REQ-001, REQ-002",
+    "Agent rationale: Exploration showed registration at /auth/register with labeled fields and a Team Name field when not joining an existing team (Join Existing Team switch off by default). Successful registration navigates to /app with headings Dashboard, Welcome {firstName} {lastName}, and ADMIN role. The test generates unique email and team name, completes registration, and asserts URL plus welcome and admin role headings to prove the objective."
+  ]
+}

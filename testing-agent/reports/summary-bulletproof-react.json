@@ -1,0 +1,128 @@
+{
+  "generatedAt": "2026-11-12T14:53:22.063Z",
+  "appId": "bulletproof-react",
+  "appName": "Bulletproof React (react-vite app)",
+  "tests": [
+    {
+      "id": "register-new-who-creates-new-team-they-land",
+      "version": 2,
+      "status": "active",
+      "kind": "exploratory",
+      "requirements": [],
+      "lastRun": {
+        "at": "2026-11-12T14:15:04.143Z",
+        "status": "passed",
+        "durationMs": 8717
+      }
+    },
+    {
+      "id": "req-001-only-team-administrators-may-start-new",
+      "version": 1,
+      "status": "business-defect",
+      "kind": "business",
+      "requirements": [
+        "REQ-001"
+      ],
+      "lastRun": {
+        "at": "2026-11-12T14:20:54.415Z",
+        "status": "failed",
+        "durationMs": 22124
+      }
+    },
+    {
+      "id": "req-001-only-team-administrators-may-start-new-mwdngip5",
+      "version": 1,
+      "status": "needs-attention",
+      "kind": "business",
+      "requirements": [
+        "REQ-001"
+      ],
+      "lastRun": {
+        "at": "2026-11-12T14:40:13.218Z",
+        "status": "failed",
+        "durationMs": 22906
+      }
+    },
+    {
+      "id": "req-001-only-team-administrators-may-start-new-mwdnvqqx",
+      "version": 1,
+      "status": "active",
+      "kind": "business",
+      "requirements": [
+        "REQ-001"
+      ],
+      "lastRun": {
+        "at": "2026-11-12T14:53:18.797Z",
+        "status": "passed",
+        "durationMs": 14867
+      }
+    }
+  ],
+  "executionsByMode": {
+    "generate": {
+      "runs": 1,
+      "ai": 1,
+      "passed": 1
+    },
+    "reuse": {
+      "runs": 5,
+      "ai": 0,
+      "passed": 3
+    },
+    "heal": {
+      "runs": 1,
+      "ai": 1,
+      "passed": 1
+    },
+    "business-generate": {
+      "runs": 3,
+      "ai": 3,
+      "passed": 1
+    }
+  },
+  "agentSessions": 5,
+  "totalTokensMeasured": 1341137,
+  "healing": [
+    {
+      "testId": "register-new-who-creates-new-team-they-land",
+      "attempt": 1,
+      "outcome": "repaired",
+      "classification": "locator-change"
+    }
+  ],
+  "traceability": [
+    {
+      "requirementId": "REQ-001",
+      "acceptanceCriteriaIds": [
+        "AC-1",
+        "AC-2"
+      ],
+      "testId": "req-001-only-team-administrators-may-start-new",
+      "testFile": "bulletproof-react/req-001-only-team-administrators-may-start-new.spec.ts",
+      "lastResult": "violated",
+      "lastEvaluatedAt": "2026-11-12T14:20:54.432Z"
+    },
+    {
+      "requirementId": "REQ-001",
+      "acceptanceCriteriaIds": [
+        "AC-1",
+        "AC-2"
+      ],
+      "testId": "req-001-only-team-administrators-may-start-new-mwdngip5",
+      "testFile": "bulletproof-react/req-001-only-team-administrators-may-start-new-mwdngip5.spec.ts",
+      "lastResult": "inconclusive",
+      "lastEvaluatedAt": "2026-11-12T14:40:13.234Z"
+    },
+    {
+      "requirementId": "REQ-001",
+      "acceptanceCriteriaIds": [
+        "AC-1",
+        "AC-2"
+      ],
+      "testId": "req-001-only-team-administrators-may-start-new-mwdnvqqx",
+      "testFile": "bulletproof-react/req-001-only-team-administrators-may-start-new-mwdnvqqx.spec.ts",
+      "lastResult": "satisfied",
+      "lastEvaluatedAt": "2026-11-12T14:53:18.807Z"
+    }
+  ]
+}

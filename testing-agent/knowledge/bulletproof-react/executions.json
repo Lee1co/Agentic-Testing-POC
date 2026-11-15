@@ -1,0 +1,106 @@
+[
+  {
+    "id": "register-new-who-creates-new-team-they-land-1794492536402",
+    "testId": "register-new-who-creates-new-team-they-land",
+    "at": "2026-11-12T14:08:56.402Z",
+    "mode": "generate",
+    "status": "passed",
+    "durationMs": 10245,
+    "testVersion": 1,
+    "aiInvocations": 1
+  },
+  {
+    "id": "register-new-who-creates-new-team-they-land-1794492615624",
+    "testId": "register-new-who-creates-new-team-they-land",
+    "at": "2026-11-12T14:10:15.624Z",
+    "mode": "reuse",
+    "status": "passed",
+    "durationMs": 12769,
+    "testVersion": 1,
+    "aiInvocations": 0
+  },
+  {
+    "id": "register-new-who-creates-new-team-they-land-1794492714232",
+    "testId": "register-new-who-creates-new-team-they-land",
+    "at": "2026-11-12T14:11:54.232Z",
+    "mode": "reuse",
+    "status": "failed",
+    "durationMs": 20920,
+    "testVersion": 1,
+    "aiInvocations": 0,
+    "failureSummary": "TimeoutError: locator.click: Timeout 10000ms exceeded."
+  },
+  {
+    "id": "register-new-who-creates-new-team-they-land-1794492807843",
+    "testId": "register-new-who-creates-new-team-they-land",
+    "at": "2026-11-12T14:13:27.843Z",
+    "mode": "reuse",
+    "status": "failed",
+    "durationMs": 19723,
+    "testVersion": 1,
+    "aiInvocations": 0,
+    "failureSummary": "TimeoutError: locator.click: Timeout 10000ms exceeded."
+  },
+  {
+    "id": "register-new-who-creates-new-team-they-land-1794492864007",
+    "testId": "register-new-who-creates-new-team-they-land",
+    "at": "2026-11-12T14:14:24.007Z",
+    "mode": "heal",
+    "status": "passed",
+    "durationMs": 10379,
+    "testVersion": 2,
+    "aiInvocations": 1
+  },
+  {
+    "id": "register-new-who-creates-new-team-they-land-1794492904135",
+    "testId": "register-new-who-creates-new-team-they-land",
+    "at": "2026-11-12T14:15:04.135Z",
+    "mode": "reuse",
+    "status": "passed",
+    "durationMs": 8717,
+    "testVersion": 2,
+    "aiInvocations": 0
+  },
+  {
+    "id": "req-001-only-team-administrators-may-start-new-1794493254423",
+    "testId": "req-001-only-team-administrators-may-start-new",
+    "at": "2026-11-12T14:20:54.423Z",
+    "mode": "business-generate",
+    "status": "failed",
+    "durationMs": 22124,
+    "testVersion": 1,
+    "aiInvocations": 1,
+    "failureSummary": "Error: expect(locator).toBeVisible() failed"
+  },
+  {
+    "id": "req-001-only-team-administrators-may-start-new-mwdngip5-1794494413226",
+    "testId": "req-001-only-team-administrators-may-start-new-mwdngip5",
+    "at": "2026-11-12T14:40:13.226Z",
+    "mode": "business-generate",
+    "status": "failed",
+    "durationMs": 22906,
+    "testVersion": 1,
+    "aiInvocations": 1,
+    "failureSummary": "Error: expect(locator).toBeVisible() failed"
+  },
+  {
+    "id": "req-001-only-team-administrators-may-start-new-mwdnvqqx-1794495089719",
+    "testId": "req-001-only-team-administrators-may-start-new-mwdnvqqx",
+    "at": "2026-11-12T14:51:29.719Z",
+    "mode": "business-generate",
+    "status": "passed",
+    "durationMs": 21733,
+    "testVersion": 1,
+    "aiInvocations": 1
+  },
+  {
+    "id": "req-001-only-team-administrators-may-start-new-mwdnvqqx-1794495198791",
+    "testId": "req-001-only-team-administrators-may-start-new-mwdnvqqx",
+    "at": "2026-11-12T14:53:18.791Z",
+    "mode": "reuse",
+    "status": "passed",
+    "durationMs": 14867,
+    "testVersion": 1,
+    "aiInvocations": 0
+  }
+]

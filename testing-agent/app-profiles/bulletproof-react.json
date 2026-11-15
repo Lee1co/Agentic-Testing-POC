@@ -1,0 +1,16 @@
+{
+  "id": "bulletproof-react",
+  "name": "Bulletproof React (react-vite app)",
+  "description": "Team collaboration app: landing page, registration (create or join a team), login, dashboard, discussions with comments, profile, admin-only users list.",
+  "sourceRepository": {
+    "url": "https://github.com/alan2207/bulletproof-react",
+    "commit": "9506629ed003a561c6627735480cce4994244bb4",
+    "license": "MIT"
+  },
+  "entryPath": "/",
+  "testDataStrategy": "There are no pre-provisioned accounts. The backend is an in-browser mock (MSW) whose data lives in the browser context's localStorage, so every Playwright test starts with an empty database. Each test must register its own users through the UI using unique generated values (e.g. a Date.now() suffix in the email). Users registered in the same browser context share the same database.",
+  "technicalNotes": [
+    "Routes discovered from source are not provided on purpose; use the explore_page tool to discover the UI.",
+    "API calls are served by a Mock Service Worker inside the page; requests to non-approved hosts are blocked by the harness."
+  ]
+}

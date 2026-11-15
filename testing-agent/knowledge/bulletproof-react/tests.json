@@ -1,0 +1,214 @@
+[
+  {
+    "id": "register-new-who-creates-new-team-they-land",
+    "appId": "bulletproof-react",
+    "objective": "Register a new user who creates a new team and verify they land on the dashboard showing a welcome message",
+    "normalizedObjective": "register new who creates new team they land dashboard showing welcome message",
+    "kind": "exploratory",
+    "file": "bulletproof-react/register-new-who-creates-new-team-they-land.spec.ts",
+    "title": "Register new user with new team and verify dashboard welcome",
+    "requirementIds": [],
+    "acceptanceCriteriaIds": [],
+    "version": 2,
+    "status": "active",
+    "createdAt": "2026-11-12T14:08:56.394Z",
+    "updatedAt": "2026-11-12T14:15:04.143Z",
+    "generatedBy": {
+      "provider": "cursor",
+      "model": "composer-2.5",
+      "sessionId": "agent-8e78c0d7-ae09-492b-a864-6d4b4b715f2e",
+      "runId": "run-7d6bdcf8-19fc-4d46-93ab-99df62062d64"
+    },
+    "locators": [
+      "getByRole('heading', { name: 'Register your account' })",
+      "getByLabel('First Name')",
+      "getByLabel('Last Name')",
+      "getByLabel('Email Address')",
+      "getByLabel('Password')",
+      "getByLabel('Team Name')",
+      "getByRole('button', { name: 'Create account' })",
+      "getByRole('heading', { name: 'Dashboard' })",
+      "getByRole('heading', { name: `Welcome ${firstName} ${lastName}` })",
+      "getByRole('heading', { name: /Your role is : ADMIN/ })"
+    ],
+    "assertionCount": 5,
+    "rationale": "Exploration showed registration at /auth/register with labeled fields and a Team Name field when not joining an existing team (Join Existing Team switch off by default). Successful registration navigates to /app with headings Dashboard, Welcome {firstName} {lastName}, and ADMIN role. The test generates unique email and team name, completes registration, and asserts URL plus welcome and admin role headings to prove the objective.",
+    "lastRun": {
+      "at": "2026-11-12T14:15:04.143Z",
+      "status": "passed",
+      "durationMs": 8717
+    },
+    "lastSuccessfulRunAt": "2026-11-12T14:15:04.143Z",
+    "previousVersions": [
+      {
+        "version": 1,
+        "file": "_history\\bulletproof-react.register-new-who-creates-new-team-they-land.v1.spec.ts",
+        "reason": "Registration still works; the primary submit control’s accessible name changed from \"Register\" to \"Create account\", so getByRole('button', { name: 'Register' }) never matched and the click timed out.",
+        "archivedAt": "2026-11-12T14:14:23.994Z"
+      }
+    ]
+  },
+  {
+    "id": "req-001-only-team-administrators-may-start-new",
+    "appId": "bulletproof-react",
+    "objective": "Validate REQ-001: Only team administrators may start new discussions",
+    "normalizedObjective": "validate req-001 only team administrators may start new discussions",
+    "kind": "business",
+    "file": "bulletproof-react/req-001-only-team-administrators-may-start-new.spec.ts",
+    "title": "REQ-001: Only team administrators may start new discussions",
+    "requirementIds": [
+      "REQ-001"
+    ],
+    "acceptanceCriteriaIds": [
+      "AC-1",
+      "AC-2"
+    ],
+    "version": 1,
+    "status": "business-defect",
+    "createdAt": "2026-11-12T14:20:54.415Z",
+    "updatedAt": "2026-11-12T14:20:54.415Z",
+    "generatedBy": {
+      "provider": "cursor",
+      "model": "composer-2.5",
+      "sessionId": "agent-af56465b-b5af-4396-bc09-1ea889efafa8",
+      "runId": "run-e625a0fa-1f61-4fac-857b-3f04f4e9aa6c"
+    },
+    "locators": [
+      "getByLabel('First Name')",
+      "getByLabel('Last Name')",
+      "getByLabel('Email Address')",
+      "getByLabel('Password')",
+      "getByLabel('Team Name')",
+      "getByRole('button', { name: 'Create account' })",
+      "getByRole('heading', { name: 'Dashboard' })",
+      "getByRole('heading', { name: /Your role is : ADMIN/ })",
+      "getByRole('button', { name: 'Open user menu' })",
+      "getByRole('menuitem', { name: 'Sign Out' })",
+      "getByRole('heading', { name: 'Log in to your account' })",
+      "getByRole('link', { name: 'Register' })",
+      "getByRole('heading', { name: 'Register your account' })",
+      "getByRole('switch')",
+      "getByRole('heading', { name: 'Welcome Team Member' })",
+      "getByRole('heading', { name: /Your role is : USER/ })",
+      "getByRole('heading', { name: 'Discussions' })",
+      "getByRole('button', { name: 'Create Discussion' })",
+      "getByRole('button', { name: 'Log in' })"
+    ],
+    "assertionCount": 13,
+    "rationale": "Creates a team ADMIN via registration with a new team name, then signs out and registers a second user with the Join Existing Team switch enabled and the same team name to represent a USER member. AC-1 opens /app/discussions as that member and asserts the Discussions heading is visible while the Create Discussion control is absent. AC-2 logs back in as the original administrator, opens Discussions, and asserts Create Discussion is visible.",
+    "lastRun": {
+      "at": "2026-11-12T14:20:54.415Z",
+      "status": "failed",
+      "durationMs": 22124
+    },
+    "previousVersions": []
+  },
+  {
+    "id": "req-001-only-team-administrators-may-start-new-mwdngip5",
+    "appId": "bulletproof-react",
+    "objective": "Validate REQ-001: Only team administrators may start new discussions",
+    "normalizedObjective": "validate req-001 only team administrators may start new discussions",
+    "kind": "business",
+    "file": "bulletproof-react/req-001-only-team-administrators-may-start-new-mwdngip5.spec.ts",
+    "title": "Validate REQ-001: Only team administrators may start new discussions",
+    "requirementIds": [
+      "REQ-001"
+    ],
+    "acceptanceCriteriaIds": [
+      "AC-1",
+      "AC-2"
+    ],
+    "version": 1,
+    "status": "needs-attention",
+    "createdAt": "2026-11-12T14:40:13.218Z",
+    "updatedAt": "2026-11-12T14:40:13.218Z",
+    "generatedBy": {
+      "provider": "cursor",
+      "model": "composer-2.5",
+      "sessionId": "agent-6c7100e1-a4c2-4f06-a985-f6aeafe1d838",
+      "runId": "run-9877f5ed-06ec-4f36-ab50-24ceda7f0b7b"
+    },
+    "locators": [
+      "getByRole('button', { name: 'Open user menu' })",
+      "getByRole('menuitem', { name: 'Sign Out' })",
+      "getByRole('heading', { name: 'Register your account' })",
+      "getByLabel('First Name')",
+      "getByLabel('Last Name')",
+      "getByLabel('Email Address')",
+      "getByLabel('Password')",
+      "getByLabel('Team Name')",
+      "getByRole('button', { name: 'Create account' })",
+      "getByRole('heading', { name: 'Dashboard' })",
+      "getByRole('heading', { name: /Your role is : ADMIN/ })",
+      "getByRole('switch')",
+      "getByRole('heading', { name: /Your role is : USER/ })",
+      "getByRole('heading', { name: 'Discussions' })",
+      "getByRole('button', { name: 'Create Discussion' })",
+      "getByRole('button', { name: 'Log in' })"
+    ],
+    "assertionCount": 16,
+    "rationale": "Registers a team founder (ADMIN) and a second user via the join-existing-team registration switch, then opens /app/discussions under each persona. AC-1 asserts the Discussions page loads for a USER but the Create Discussion control is hidden; AC-2 asserts an ADMIN sees Create Discussion. Locators match observed registration, navigation, and discussions UI (roles, labels, links).",
+    "lastRun": {
+      "at": "2026-11-12T14:40:13.218Z",
+      "status": "failed",
+      "durationMs": 22906
+    },
+    "previousVersions": []
+  },
+  {
+    "id": "req-001-only-team-administrators-may-start-new-mwdnvqqx",
+    "appId": "bulletproof-react",
+    "objective": "Validate REQ-001: Only team administrators may start new discussions",
+    "normalizedObjective": "validate req-001 only team administrators may start new discussions",
+    "kind": "business",
+    "file": "bulletproof-react/req-001-only-team-administrators-may-start-new-mwdnvqqx.spec.ts",
+    "title": "Validate REQ-001: Only team administrators may start new discussions",
+    "requirementIds": [
+      "REQ-001"
+    ],
+    "acceptanceCriteriaIds": [
+      "AC-1",
+      "AC-2"
+    ],
+    "version": 1,
+    "status": "active",
+    "createdAt": "2026-11-12T14:51:29.706Z",
+    "updatedAt": "2026-11-12T14:53:18.797Z",
+    "generatedBy": {
+      "provider": "cursor",
+      "model": "composer-2.5",
+      "sessionId": "agent-430b6158-16de-4d8f-9d3c-23de1385b9a2",
+      "runId": "run-e969dd40-bbc3-43a1-8657-92af460be2f8"
+    },
+    "locators": [
+      "getByLabel('First Name')",
+      "getByLabel('Last Name')",
+      "getByLabel('Email Address')",
+      "getByLabel('Password')",
+      "getByLabel('Team Name')",
+      "getByRole('button', { name: 'Create account' })",
+      "getByRole('heading', { name: /Your role is : ADMIN/ })",
+      "getByRole('button', { name: 'Open user menu' })",
+      "getByRole('menuitem', { name: 'Sign Out' })",
+      "getByRole('heading', { name: 'Log in to your account' })",
+      "getByRole('link', { name: 'Register' })",
+      "getByRole('switch')",
+      "getByRole('combobox', { name: 'Team' })",
+      "getByRole('heading', { name: /Your role is : USER/ })",
+      "getByRole('link', { name: 'Discussions' })",
+      "getByRole('heading', { name: 'Discussions', level: 1 })",
+      "getByRole('button', { name: 'Create Discussion' })",
+      "getByRole('button', { name: 'Log in' })",
+      "getByRole('link', { name: 'Users' })"
+    ],
+    "assertionCount": 10,
+    "rationale": "Creates an ADMIN by registering a new team and a USER by joining that team via the Join Existing Team switch and Team combobox. AC-1 asserts the member sees the Discussions page but not the Create Discussion button. AC-2 signs in as the administrator and asserts Create Discussion is available on Discussions. Admin session after login is confirmed via the admin-only Users nav link because login may land on /app without the dashboard role heading.",
+    "lastRun": {
+      "at": "2026-11-12T14:53:18.797Z",
+      "status": "passed",
+      "durationMs": 14867
+    },
+    "lastSuccessfulRunAt": "2026-11-12T14:53:18.797Z",
+    "previousVersions": []
+  }
+]

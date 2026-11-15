@@ -1,0 +1,7 @@
+node_modules/
+.env
+.agent-workspace/
+test-results/
+playwright-report/
+reports/artifacts/
+*.log

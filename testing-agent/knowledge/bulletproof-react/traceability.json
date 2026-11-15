@@ -1,0 +1,35 @@
+[
+  {
+    "requirementId": "REQ-001",
+    "acceptanceCriteriaIds": [
+      "AC-1",
+      "AC-2"
+    ],
+    "testId": "req-001-only-team-administrators-may-start-new",
+    "testFile": "bulletproof-react/req-001-only-team-administrators-may-start-new.spec.ts",
+    "lastResult": "violated",
+    "lastEvaluatedAt": "2026-11-12T14:20:54.432Z"
+  },
+  {
+    "requirementId": "REQ-001",
+    "acceptanceCriteriaIds": [
+      "AC-1",
+      "AC-2"
+    ],
+    "testId": "req-001-only-team-administrators-may-start-new-mwdngip5",
+    "testFile": "bulletproof-react/req-001-only-team-administrators-may-start-new-mwdngip5.spec.ts",
+    "lastResult": "inconclusive",
+    "lastEvaluatedAt": "2026-11-12T14:40:13.234Z"
+  },
+  {
+    "requirementId": "REQ-001",
+    "acceptanceCriteriaIds": [
+      "AC-1",
+      "AC-2"
+    ],
+    "testId": "req-001-only-team-administrators-may-start-new-mwdnvqqx",
+    "testFile": "bulletproof-react/req-001-only-team-administrators-may-start-new-mwdnvqqx.spec.ts",
+    "lastResult": "satisfied",
+    "lastEvaluatedAt": "2026-11-12T14:53:18.807Z"
+  }
+]

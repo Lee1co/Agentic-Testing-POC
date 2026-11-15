@@ -1,0 +1,30 @@
+{
+  "command": "run",
+  "startedAt": "2026-11-12T14:14:54.483Z",
+  "finishedAt": "2026-11-12T14:15:04.156Z",
+  "appId": "bulletproof-react",
+  "appName": "Bulletproof React (react-vite app)",
+  "targetUrl": "http://localhost:3000",
+  "objective": "Register a new user who creates a new team and verify they land on the dashboard showing a welcome message",
+  "mode": "reuse",
+  "status": "passed",
+  "durationMs": {
+    "total": 9673,
+    "testExecution": 8717,
+    "agent": 0
+  },
+  "testId": "register-new-who-creates-new-team-they-land",
+  "testFile": "bulletproof-react/register-new-who-creates-new-team-they-land.spec.ts",
+  "testVersion": 2,
+  "reusedExistingTest": true,
+  "matchReason": "test-id",
+  "aiInvocations": 0,
+  "agentInvocations": [],
+  "costNote": "no AI usage",
+  "healing": {
+    "attempted": false
+  },
+  "failures": [],
+  "screenshots": [],
+  "notes": []
+}

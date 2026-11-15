@@ -1,0 +1,41 @@
+{
+  "command": "run",
+  "startedAt": "2026-11-12T14:53:03.249Z",
+  "finishedAt": "2026-11-12T14:53:18.811Z",
+  "appId": "bulletproof-react",
+  "appName": "Bulletproof React (react-vite app)",
+  "targetUrl": "http://localhost:3000",
+  "objective": "Validate REQ-001: Only team administrators may start new discussions",
+  "mode": "business-reuse",
+  "status": "passed",
+  "durationMs": {
+    "total": 15562,
+    "testExecution": 14867,
+    "agent": 0
+  },
+  "testId": "req-001-only-team-administrators-may-start-new-mwdnvqqx",
+  "testFile": "bulletproof-react/req-001-only-team-administrators-may-start-new-mwdnvqqx.spec.ts",
+  "testVersion": 1,
+  "reusedExistingTest": true,
+  "matchReason": "requirement-id",
+  "aiInvocations": 0,
+  "agentInvocations": [],
+  "costNote": "no AI usage",
+  "healing": {
+    "attempted": false
+  },
+  "failures": [],
+  "screenshots": [],
+  "requirement": {
+    "requirementId": "REQ-001",
+    "title": "Only team administrators may start new discussions",
+    "acceptanceCriteriaIds": [
+      "AC-1",
+      "AC-2"
+    ],
+    "result": "satisfied",
+    "explanation": "Generated test asserting AC-1, AC-2 passed against the running application.",
+    "source": "Team Collaboration - Business Requirements Specification §4.2 Discussion governance"
+  },
+  "notes": []
+}

@@ -1,0 +1,73 @@
+{
+  "command": "heal",
+  "startedAt": "2026-11-12T14:13:07.059Z",
+  "finishedAt": "2026-11-12T14:14:24.023Z",
+  "appId": "bulletproof-react",
+  "appName": "Bulletproof React (react-vite app)",
+  "targetUrl": "http://localhost:3000",
+  "objective": "Register a new user who creates a new team and verify they land on the dashboard showing a welcome message",
+  "mode": "heal",
+  "status": "passed",
+  "durationMs": {
+    "total": 76964,
+    "testExecution": 10379,
+    "agent": 44444
+  },
+  "testId": "register-new-who-creates-new-team-they-land",
+  "testFile": "bulletproof-react/register-new-who-creates-new-team-they-land.spec.ts",
+  "testVersion": 2,
+  "reusedExistingTest": true,
+  "matchReason": "test-id",
+  "aiInvocations": 1,
+  "agentInvocations": [
+    {
+      "kind": "repair-test",
+      "status": "succeeded",
+      "provider": "cursor",
+      "model": "composer-2.5",
+      "durationMs": 44444,
+      "sessionId": "agent-8e78c0d7-ae09-492b-a864-6d4b4b715f2e",
+      "runId": "run-80b4c969-9c2c-4ba7-8259-f8bd2de2462d",
+      "resumedSession": true,
+      "toolCalls": {
+        "explore_page": 2,
+        "run_candidate_test": 1,
+        "submit_repair": 1
+      },
+      "usage": {
+        "inputTokens": 83418,
+        "outputTokens": 1659,
+        "cacheReadTokens": 79040,
+        "cacheWriteTokens": 0,
+        "totalTokens": 85077
+      },
+      "costUnavailableReason": "getUsage() unavailable (feature_unavailable)"
+    }
+  ],
+  "tokenUsage": {
+    "inputTokens": 83418,
+    "outputTokens": 1659,
+    "cacheReadTokens": 79040,
+    "cacheWriteTokens": 0,
+    "totalTokens": 85077,
+    "reasoningTokens": 0
+  },
+  "costNote": "not reported (getUsage() unavailable (feature_unavailable)); no estimate is made",
+  "healing": {
+    "attempted": true,
+    "outcome": "repaired",
+    "attempts": 1,
+    "classification": "locator-change",
+    "diagnosis": "Registration still works; the primary submit control’s accessible name changed from \"Register\" to \"Create account\", so getByRole('button', { name: 'Register' }) never matched and the click timed out.",
+    "changes": [
+      "getByRole('button', { name: 'Register' }) -> getByRole('button', { name: 'Create account' })"
+    ],
+    "archivedOriginal": "_history\\bulletproof-react.register-new-who-creates-new-team-they-land.v1.spec.ts"
+  },
+  "failures": [],
+  "screenshots": [],
+  "notes": [
+    "Original failure before healing: TimeoutError: locator.click: Timeout 10000ms exceeded.",
+    "Deterministic pre-classification: possible-ui-change"
+  ]
+}

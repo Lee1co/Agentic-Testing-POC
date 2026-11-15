@@ -1,0 +1,35 @@
+{
+  "name": "agentic-testing-agent",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Generic, self-learning, business-aware agentic UI testing framework (POC)",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "agent": "tsx src/cli.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p generated-tests/tsconfig.json",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:unit": "vitest run tests/unit",
+    "test:integration": "vitest run tests/integration",
+    "browsers": "playwright install chromium"
+  },
+  "dependencies": {
+    "@cursor/sdk": "latest",
+    "@playwright/test": "latest",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.6.3",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "@types/node": "^22.9.0",
+    "eslint": "^9.14.0",
+    "tsx": "^4.19.2",
+    "typescript-eslint": "^8.14.0",
+    "vitest": "^2.1.4"
+  }
+}

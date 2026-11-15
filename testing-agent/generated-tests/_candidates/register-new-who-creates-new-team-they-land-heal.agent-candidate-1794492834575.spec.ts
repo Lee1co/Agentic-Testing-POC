@@ -1,0 +1,29 @@
+import { test, expect } from '../fixtures';
+
+test('register new user creating a new team lands on dashboard with welcome message', async ({ page }) => {
+  const suffix = Date.now();
+  const firstName = 'Test';
+  const lastName = 'Founder';
+  const email = `founder-${suffix}@test.com`;
+  const password = 'password123';
+  const teamName = `Team-${suffix}`;
+
+  await test.step('Register a new user and create a new team', async () => {
+    await page.goto('/auth/register');
+    await expect(page.getByRole('heading', { name: 'Register your account' })).toBeVisible();
+
+    await page.getByLabel('First Name').fill(firstName);
+    await page.getByLabel('Last Name').fill(lastName);
+    await page.getByLabel('Email Address').fill(email);
+    await page.getByLabel('Password').fill(password);
+    await page.getByLabel('Team Name').fill(teamName);
+    await page.getByRole('button', { name: 'Create account' }).click();
+  });
+
+  await test.step('Verify dashboard shows welcome message for the new admin', async () => {
+    await expect(page).toHaveURL(/\/app/);
+    await expect(page.getByRole('heading', { name: 'Dashboard' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: `Welcome ${firstName} ${lastName}` })).toBeVisible();
+    await expect(page.getByRole('heading', { name: /Your role is : ADMIN/ })).toBeVisible();
+  });
+});

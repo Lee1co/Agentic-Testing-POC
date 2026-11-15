@@ -1,0 +1,37 @@
+{
+  "command": "run",
+  "startedAt": "2026-11-12T14:11:29.023Z",
+  "finishedAt": "2026-11-12T14:11:54.242Z",
+  "appId": "bulletproof-react",
+  "appName": "Bulletproof React (react-vite app)",
+  "targetUrl": "http://localhost:3000",
+  "objective": "Register a new user who creates a new team and verify they land on the dashboard showing a welcome message",
+  "mode": "reuse",
+  "status": "failed",
+  "durationMs": {
+    "total": 25219,
+    "testExecution": 20920,
+    "agent": 0
+  },
+  "testId": "register-new-who-creates-new-team-they-land",
+  "testFile": "bulletproof-react/register-new-who-creates-new-team-they-land.spec.ts",
+  "testVersion": 1,
+  "reusedExistingTest": true,
+  "matchReason": "test-id",
+  "aiInvocations": 0,
+  "agentInvocations": [],
+  "costNote": "no AI usage",
+  "healing": {
+    "attempted": false
+  },
+  "failures": [
+    {
+      "testTitle": "register new user creating a new team lands on dashboard with welcome message",
+      "message": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Register' })\n\n\n  28 |     await page.getByLabel('Password').fill(password);\n  29 |     await page.getByLabel('Team Name').fill(teamName);\n> 30 |     await page.getByRole('button', { name: 'Register' }).click();\n     |                                                          ^\n  31 |   });\n  32 |\n  33 |   await test.step('Verify dashboard shows welcome message for the new admin', async () => {\n    at C:\\Users\\leecoh\\OneDrive - AMDOCS\\Documents\\Agentic-Testing-POC\\testing-agent\\generated-tests\\bulletproof-react\\register-new-who-creates-new-team-they-land.spec.ts:30:58\n    at C:\\Users\\leecoh\\OneDrive - AMDOCS\\Documents\\Agentic-Testing-POC\\testing-agent\\generated-tests\\bulletproof-react\\register-new-who-creates-new-team-they-land.spec.ts:21:3"
+    }
+  ],
+  "screenshots": [
+    "C:\\Users\\leecoh\\OneDrive - AMDOCS\\Documents\\Agentic-Testing-POC\\testing-agent\\reports\\artifacts\\1794492689024-run-register-new-who-creates-new-team-they-land\\test-results\\bulletproof-react-register-b9608-hboard-with-welcome-message-chromium\\test-failed-1.png"
+  ],
+  "notes": []
+}
